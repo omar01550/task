@@ -51,64 +51,26 @@ const data = [
 const createCard = (ele) => {
     return (
         `
-        <div class="col-8 offset-2 mt-5 bg-white p-3 bg-primary" style="border-radius: 10px;;">
-        <div class="row">
-            <div class="col-2">
-                <i class="fa-brands fa-apple" style="font-size: 4rem;"></i>
-            </div>
-            <div class="col-10">
-                <h3 class="ml-sm-5 ml-md-0">${ele.title}</h3>
-                <p>apple</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1" style="text-align: end;"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="col-2">
-                <p>mumbei</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-1" style="text-align: end;">
-                <i class="fa-regular fa-id-card"></i>
-            </div>
-            <div class="col">
-                <p>adobe illustrator , adobe photo.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1" style="text-align: end;">
-                <i class="fa-solid fa-user-group"></i>
-            </div>
-            <div class="col-2">
-                24 applications
-            </div>
-            <div class="col-1" style="text-align: end;"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <div class="col-3">applied today</div>
-        </div>
-        <div class="d-flex justify-content-start">
-            
-                <button class="btn px-2 py-1  text-white border-none">intership</button>
-            
-            
-                <button class="ml-2 px-2 py-1 text-white border-none outline-none btn">permanent job</button>
-            
-
-
-        </div>
-        <div class="row offset-2">
-            <div class="col-3 text-primary text-end ">view application</div>
-            <div class="col-1">
-                <i class="fa-solid fa-chevron-right text-primary" style="font-size: .78rem; "></i>
-            </div>
-            <div class="col-1">
-                <i class="fa-regular fa-bookmark"></i>
-            </div>
-            <div class="col-1">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            </div>
-        </div>
-    </div>
+        <div class="card my-3  w-sm-100 w-md-50">
+                        <div class="row">
+                            
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h5 class="card-title">${ele.title}</h5>
+                                    <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>canada</p>
+                                    <p class="card-text"><i class="fas fa-users me-2"></i>10 applications</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            
+                                            <button type="button" class="btn btn-primary">Job</button>
+                                            <button type="button" class="btn btn-primary">intern</button>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     `
 
     )
@@ -125,7 +87,7 @@ const renderUi = (searchResult) => {
         // empty result
         searchResultSection.innerHTML = `<div class="no-results mt-5">
         <h2>No Results Found</h2>
-        <p>Sorry, your search did not match any results. Please try again.</p>
+        
       </div>`
     }
 
@@ -146,6 +108,12 @@ const handleSearch = (e) => {
 
 allInputSearch.forEach((ele) => {
     ele.addEventListener("keyup", handleSearch);
+    ele.addEventListener("blur", () => {
+        window.scrollTo({
+            left: "0",
+            top: searchResultSection.offsetTop
+        })
+    })
 
 })
 

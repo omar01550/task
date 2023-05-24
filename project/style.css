@@ -6,32 +6,30 @@
 
 }
 
-
-
-div h2 {
-    font-size: 15px;
+.hero {
+    background-image: url('./job.jpeg');
+    background-size: cover;
+    ;
 }
 
-.align {
-    display: flex;
-    align-items: center;
+.hero>div {
+    min-height: 70vh;
+}
+
+.hero .content {
+    width: 70%;
+    height: fit-content;
+}
+
+.overlay-bg {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-
-.search {
-    background-color: white;
-    max-width: 20rem;
-    border-radius: 10px;
+.services .card .main-icon {
+    font-size: 5rem;
 }
 
-/* home page  */
-
-.hero {}
-
-.carousel-inner .card {
-    padding-top: 30px;
-}
 
 .search-input input {
     width: fit-content;
@@ -48,22 +46,8 @@ div h2 {
 }
 
 
-.section-head {
-    width: 100%;
 
-}
 
-.section-head .container {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.carousel-indicators li {
-    z-index: 10000;
-    background-color: red;
-}
 
 .btn {
     border: none;
@@ -74,20 +58,6 @@ div h2 {
 }
 
 
-
-.arousel-control-next-icon {
-    background-color: red;
-    z-index: 1000000;
-}
-
-.btn-outer {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 /* not fond data */
