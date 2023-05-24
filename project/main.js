@@ -3,7 +3,7 @@ let searchResultSection = document.querySelector(".search-result-section")
 
 const data = [
     {
-        title: "python",
+        title: "next js",
         image: "./download.png",
         company: "apple",
         location: "canada",
@@ -14,7 +14,29 @@ const data = [
 
     },
     {
-        title: "python",
+        title: "graph ql",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "express",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "react",
         image: "./download.png",
         company: "apple",
         location: "canada",
@@ -25,8 +47,6 @@ const data = [
 
     }
 ]
-
-
 
 const createCard = (ele) => {
     return (
