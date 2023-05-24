@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+
+}
+
+
+
+div h2 {
+    font-size: 15px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.search {
+    background-color: white;
+    max-width: 20rem;
+    border-radius: 10px;
+}
+
+/* home page  */
+
+.hero {}
+
+.carousel-inner .card {
+    padding-top: 30px;
+}
+
+.search-input input {
+    width: fit-content;
+    padding: 10px;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.search-input input {
+    outline: none;
+    border: none;
+}
+
+
+.section-head {
+    width: 100%;
+
+}
+
+.section-head .container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-indicators li {
+    z-index: 10000;
+    background-color: red;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    ;
+    margin-left: 20px;
+    background-color: darkcyan;
+}
+
+
+
+.arousel-control-next-icon {
+    background-color: red;
+    z-index: 1000000;
+}
+
+.btn-outer {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* not fond data */
+
+.no-results {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.no-results h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
