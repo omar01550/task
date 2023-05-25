@@ -21,10 +21,32 @@
     height: fit-content;
 }
 
-.overlay-bg {
-    background-color: rgba(0, 0, 0, 0.8);
+.scroll-to-top {
+    right: -100px;
+    bottom: -100px;
+    transition: 500ms;
 }
 
+.display-btn {
+    right: 40px;
+    bottom: 40px;
+    z-index: 100000;
+}
+
+.overlay-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+/* 
+about us */
+/* .about-us-inner>div {
+    width: 50%;
+} */
+
+.about-us-inner .card {
+    width: 250px;
+}
 
 .services .card .main-icon {
     font-size: 5rem;

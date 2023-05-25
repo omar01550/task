@@ -95,12 +95,9 @@ const renderUi = (searchResult) => {
 
 const handleSearch = (e) => {
     let searchKey = e.target.value;
-    searchResult = data.filter(ele => ele.title.includes(searchKey));
+    searchResult = data.filter(ele => ele.title.includes(searchKey.toLowerCase() || searchKey.toUpperCase()));
     renderUi(searchResult);
-    // window.scrollTo({
-    //     left: "0",
-    //     top: searchResultSection.offsetTop
-    // })
+
 
 }
 
@@ -119,3 +116,25 @@ allInputSearch.forEach((ele) => {
 
 
 renderUi(data);
+
+
+//scroll-to-top
+let scrollToTop = document.querySelector(".scroll-to-top");
+
+scrollToTop.addEventListener("click", () => {
+    window.scrollTo(
+        {
+            left: "0",
+            top: "0"
+        }
+    )
+})
+window.onscroll = () => {
+    console.log(true);
+    if (window.scrollY > 600) {
+        scrollToTop.classList.add("display-btn")
+    } else {
+        scrollToTop.classList.remove("display-btn")
+
+    }
+}
