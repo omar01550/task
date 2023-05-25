@@ -14,7 +14,7 @@ const data = [
 
     },
     {
-        title: "graph ql",
+        title: "react js",
         image: "./download.png",
         company: "apple",
         location: "canada",
@@ -36,7 +36,106 @@ const data = [
 
     },
     {
-        title: "react",
+        title: "node js",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "Javascript",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "php",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "vue js",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "angular js",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "electron js",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "laravel ",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "python",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "flask",
+        image: "./download.png",
+        company: "apple",
+        location: "canada",
+        applications: 200,
+        aplied: 20
+
+
+
+    },
+    {
+        title: "flutter",
         image: "./download.png",
         company: "apple",
         location: "canada",
@@ -95,7 +194,7 @@ const renderUi = (searchResult) => {
 
 const handleSearch = (e) => {
     let searchKey = e.target.value;
-    searchResult = data.filter(ele => ele.title.includes(searchKey.toLowerCase() || searchKey.toUpperCase()));
+    searchResult = data.filter(ele => ele.title.toLowerCase().includes(searchKey.toLowerCase() || searchKey.toUpperCase()));
     renderUi(searchResult);
 
 
@@ -130,7 +229,7 @@ scrollToTop.addEventListener("click", () => {
     )
 })
 window.onscroll = () => {
-    console.log(true);
+
     if (window.scrollY > 600) {
         scrollToTop.classList.add("display-btn")
     } else {
